@@ -1,0 +1,96 @@
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #000; /* Fondo negro */
+  color: #fff; /* Texto blanco */
+  text-align: center;
+}
+
+h1 {
+  margin-top: 20px;
+  font-size: 36px; /* Tamaño del encabezado h1 */
+  color: #ff6600; /* Color naranja */
+  text-transform: uppercase; /* Texto en mayúsculas */
+  letter-spacing: 4px; /* Espaciado entre letras */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra de texto */
+}
+
+/* Estilos del selector de género */
+label {
+  display: block;
+  margin: 20px auto 10px;
+  text-align: center;
+  font-weight: bold;
+  color: #ff6600; /* Color naranja */
+  text-transform: uppercase; /* Texto en mayúsculas */
+}
+
+select {
+  display: block;
+  margin: 0 auto 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 300px;
+  font-size: 16px;
+  color: #333;
+  background-color: #fff; /* Fondo blanco */
+}
+
+/* Estilos de la lista de películas */
+#movieList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.movie-card {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  padding: 20px;
+  width: 300px;
+  text-align: left;
+  border-radius: 5px;
+  overflow: hidden;
+  transition: transform 0.2s;
+}
+
+.movie-card:hover {
+  transform: scale(1.03);
+}
+
+.movie-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.movie-card h2 {
+  font-size: 24px; /* Tamaño del encabezado h2 */
+  margin: 10px 0;
+  color: #ff6600; /* Color naranja */
+  text-transform: uppercase; /* Texto en mayúsculas */
+  letter-spacing: 2px; /* Espaciado entre letras */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra de texto */
+}
+
+.movie-card p {
+  font-size: 16px; /* Tamaño del texto */
+  line-height: 1.4;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+/* Estilos para dispositivos móviles */
+@media screen and (max-width: 768px) {
+  select {
+    width: 100%;
+  }
+
+  .movie-card {
+    width: 100%;
+  }
+}

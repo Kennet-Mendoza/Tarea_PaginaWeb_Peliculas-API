@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Películas Populares</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Selector de Idioma -->
+    <div>
+        <button id="toggleLanguage">Español</button>
+    </div>
+
+    <!-- Selector de Géneroo -->
+    <div>
+        <label for="genreSelect">Filtrar por género:</label>
+        <select id="genreSelect"></select>
+    </div>
+
+    <h1>Películas Populares</h1>
+    <!-- Botones de paginación -->
+    <div>
+        <button id="prevPage" disabled>Anterior</button>
+        <button id="nextPage">Siguiente</button>
+    </div>
+
+    <div id="movieList"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
